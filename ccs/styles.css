@@ -1,0 +1,628 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+
+/*GENERICOS*/
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+li{
+    display: inline-block;
+    padding: .3rem;    
+}
+header{
+    position:fixed;
+    width: 100%;
+    z-index: 999;
+}
+/*FIN GENERICOS*/
+
+
+/*NAVEGADOR*/
+
+#grillahome {
+    /*background-color: gray;*/
+    background-image: url("../images/Fondo_All.png");
+    background-repeat: no-repeat;
+    background-size: 1266px;
+    display: grid;
+    grid-template-areas:
+    "navportada navportada navportada navportada navportada navportada";
+    grid-template-rows: 1460px; 
+    grid-template-columns: 50% 10% 10% 10% 10% 10%;
+}
+#navportada{
+    grid-area: navportada; 
+}
+
+.navgrid{
+    background-color: grey;
+    opacity: 60%;
+    display: grid;
+    grid-template-columns: 50% 10% 10% 10% 10% 10%;
+    grid-template-rows: 40px;
+    align-items: center;
+    justify-items: center;
+    
+}
+
+.navover:hover {
+    color: black;
+
+}
+.bordeado:hover {
+    color: black;
+
+}
+
+.logonav {
+    font-family: 'Roboto', sans-serif;
+    font-weight:lighter;
+    color: white;
+    display: flex;
+    margin-left: -300px;
+}
+.logonav:hover {
+    font-family: 'Roboto', sans-serif;
+    font-weight:bold;
+    color: black;
+}
+
+.bordeado {
+    color: white;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 20px;
+    display: block;
+    width: 97px;
+    height: 30px;
+    padding: 2px;
+    padding-left: 2px;
+    padding-left: 5px;
+}
+
+/*FIN NAVEGADOR*/
+
+/*SITIO*/
+
+
+/*PORTADA*/
+
+.gridmain{
+    display: grid;
+    grid-template-columns: 1.3fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+section#portada {
+        grid-area: portada;     
+}
+
+.portada__texto {
+
+    font-size: 4rem;
+    position: absolute;
+    top: 278px;
+    left: 15px;
+}
+
+.portada__imagen{
+    position: absolute;
+    top: 100px;
+    right: 0px;
+
+}
+/*FIN PORTADA*/
+
+/*ABOUT*/
+
+#grilla2 {
+    display: grid;
+    grid-template-areas:
+    "footer footer footer footer footer footer";
+    grid-template-rows:58px; 
+    grid-template-columns: 50% 10% 10% 10% 10% 10%;
+}
+
+
+.fondo2{
+    background-color: white;
+    background-image: url("../images/Fondo_About.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.about__texto{
+    font-weight:lighter;
+    font-size: 3rem;
+    position: absolute;
+    top: 909px;
+    right: 50px;
+    
+}
+
+.about__imagen{
+    position: absolute;
+    top: 827px;
+    left: 0px;
+
+}
+.about__imagen2{
+    position: absolute;
+    top: 1285px;
+    left: 0px;
+    width: 1265px;
+
+}
+section#about {
+    grid-area: about;     
+}
+
+/*FIN ABOUT*/
+
+/*3D_GALERIA*/
+
+#grilla3d {
+    display: grid;
+    grid-template-areas:
+    "nav3d nav3d nav3d nav3d nav3d nav3d";
+    grid-template-rows: 1537px; 
+    grid-template-columns: 50% 10% 10% 10% 10% 10%;
+}
+
+
+.fondo3d{
+    background-image: url("../images/Fondo_All.png");
+    background-repeat: no-repeat;
+    background-size: 1266px;
+    background-position-y: -1222px;
+}
+
+#nav3d{
+    grid-area: nav3d; 
+}
+
+.titulo{
+    display:flex;
+    margin-right: 100px;
+    font-weight:lighter;
+    font-size: 5rem;
+    position: absolute;
+    top: 100px;
+    left: 30px;
+}
+.subtitulo__1{
+    
+    font-size: 2.5rem;
+    position: absolute;
+    top: 250px;
+    left: 50px;
+}
+
+
+.imagen__1{
+    position: absolute;
+    top: 330px;
+    left: 20px;
+
+}
+.imagen__2{
+    position: absolute;
+    top: 330px;
+    left: 435px;
+
+}
+.imagen__3{
+    position: absolute;
+    top: 330px;
+    left: 850px;
+
+}
+
+.subtitulo__2{
+    display:flex;
+    margin-right: 100px;
+    
+    font-size: 2.5rem;
+    position: absolute;
+    top: 670px;
+    left: 50px;
+}
+.imagen__4{
+    position: absolute;
+    top: 750px;
+    left: 20px;
+
+}
+.imagen__5{
+    position: absolute;
+    top: 750px;
+    left: 435px;
+
+}
+.imagen__6{
+    position: absolute;
+    top: 750px;
+    left: 850px;
+
+}
+
+
+.subtitulo__3{
+    
+    display:flex;
+    margin-right: 100px;
+    font-size: 2.5rem;
+    position: absolute;
+    top: 1080px;
+    left: 50px;
+}
+
+.imagen__7{
+    position: absolute;
+    top: 1150px;
+    left: 20px;
+
+}
+.imagen__8{
+    position: absolute;
+    top: 1150px;
+    left: 435px;
+
+}
+.imagen__9{
+    position: absolute;
+    top: 1150px;
+    left: 850px;
+
+}
+/*FIN 3D_GALERIA*/
+
+
+/*MUSIC*/
+#grillamusic {
+    display: grid;
+    grid-template-areas:
+    "nav3d nav3d nav3d nav3d nav3d nav3d";
+    grid-template-rows: 1070px; 
+    grid-template-columns: 50% 10% 10% 10% 10% 10%;
+}
+
+.fondomusic{
+    background-color: white;
+    background-image: url("../images/Fondo_All.png");
+    background-repeat: no-repeat;
+    background-size: 1266px;
+    background-position-y: -2547px;
+}
+.disco_1{
+    position: absolute;
+    top: 250px;
+    left: 50px;
+}
+.disco_2{
+    position: absolute;
+    top: 250px;
+    left: 450px;
+}
+.disco_3{
+    position: absolute;
+    top: 250px;
+    left: 850px;
+}
+
+.subtitulo_music{
+    
+    font-size: 2.5rem;
+    position: absolute;
+    top: 670px;
+    left: 50px;
+}
+.imagen_music{
+    position: absolute;
+    top: 750px;
+    left: 50px;
+
+}
+.listen{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: cadetblue;
+    text-decoration: underline;
+    font-size: 1rem;
+    font-style: normal;
+    position: absolute;
+    top: 990px;
+    left: 1100px;
+}
+/*FIN MUSIC*/
+
+/*UX/UI*/
+#grillauxui {
+    display: grid;
+    grid-template-areas:
+    "nav3d nav3d nav3d nav3d nav3d nav3d";
+    grid-template-rows: 1070px; 
+    grid-template-columns: 50% 10% 10% 10% 10% 10%;
+}
+.fondouxui{
+    background-color: white;
+    background-image: url("../images/Fondo_All_180.png");
+    background-repeat: no-repeat;
+    background-size: 1266px;
+    background-position-y: -1802px;
+  
+}
+
+.subtitulo__1uxui{
+    
+    font-size: 2.5rem;
+    position: absolute;
+    top: 250px;
+    left: 50px;
+}
+.subtitulo__2uxui{
+    
+    font-size: 2.5rem;
+    position: absolute;
+    top: 600px;
+    left: 50px;
+}
+.imagenuxui__1{
+    position: absolute;
+    width: 95%;
+    top: 330px;
+    left: 30px;
+
+}
+.imagenuxui__2{
+    position: absolute;
+    width: 45%;
+    top: 670px;
+    left: 30px;
+
+}
+.imagenuxui__3{
+    position: absolute;
+    width: 45%;
+    top: 670px;
+    left: 670px;
+
+}
+/*FIN UX/UI*/
+
+/*TEACH*/
+
+#grillateach {
+    display: grid;
+    grid-template-areas:
+    "nav3d nav3d nav3d nav3d nav3d nav3d";
+    grid-template-rows: 1265px; 
+    grid-template-columns: 50% 10% 10% 10% 10% 10%;
+}
+.fondoteach{
+    background-color: white;
+    background-image: url("../images/Fondo_All_180.png");
+    background-repeat: no-repeat;
+    background-size: 1266px;
+    background-position-y: -970px;
+}
+
+.subtitulo__1teach{
+    
+    font-size: 2.5rem;
+    position: absolute;
+    top: 250px;
+    left: 50px;
+}
+.imagenteach__1{
+    position: absolute;
+    width: 95%;
+    top: 330px;
+    left: 30px;
+
+}
+.texto__1teach{
+    
+    font-size: 2.5rem;
+    position: absolute;
+    top: 670px;
+    left: 50px;
+}
+.imagenteach__2{
+    position: absolute;
+    width: 45%;
+    top: 670px;
+    left: 670px;
+
+}
+.texto__2teach{
+    
+    font-size: 2.5rem;
+    position: absolute;
+    top: 970px;
+    left: 670px;
+}
+.imagenteach__3{
+    position: absolute;
+    width: 45%;
+    top: 970px;
+    left: 30px;
+
+}
+
+/*FIN TEACH*/
+
+/*CONTACTO*/
+#grillacontact {
+    display: grid;
+    grid-template-areas:
+    "nav3d nav3d nav3d nav3d nav3d nav3d";
+    grid-template-rows: 1265px; 
+    grid-template-columns: 50% 10% 10% 10% 10% 10%;
+}
+
+.fondocontact{
+    background-color: white;
+    background-image: url("../images/Fondo_All_180.png");
+    background-repeat: no-repeat;
+    background-size: 1266px;
+    background-position-y: -970px;
+}  
+
+.subtitulo__1form{
+    font-size: 2.5rem;
+    position: absolute;
+    top: 250px;
+    left: 50px;
+}
+.subtitulo__1bform{
+    font-size: 2.5rem;
+    position: absolute;
+    top: 250px;
+    left: 750px;
+}
+.subtitulo__2form{
+    font-size: 2rem;
+    position: absolute;
+    top: 390px;
+    left: 50px;
+}
+.formflex{
+    display:flex;
+
+}
+
+.input1{
+    padding-top: 10px;
+}
+.input2{
+    padding-top: 10px;
+}
+.texto_form3{
+    font-size: 1.5rem;
+    position: relative;
+    top: 55px;
+    margin-left: 50px;
+    
+}
+.checkbox1{
+    color: aqua;
+    position: relative;
+    top: 55px;
+    left: 30px;   
+}
+.texto_form4{
+    font-size: 1.5rem;
+    position: relative;
+    top: 55px;
+    margin-left: 80px;
+}
+.checkbox2{
+    color: aqua;
+    position: relative;
+    top: 55px;
+    left: 30px;   
+}
+.texto_form5{
+    font-size: 1.5rem;
+    position: relative;
+    top: 55px;
+    margin-left: 100px;
+}
+.checkbox3{
+    color: aqua;
+    position: relative;
+    top: 55px;
+    left: 30px;   
+}
+.texto_form6{
+    font-size: 1.5rem;
+    position: relative;
+    top: 55px;
+    margin-left: 120px;
+}
+.checkbox4{
+    color: aqua;
+    position: relative;
+    top: 55px;
+    left: 30px;   
+}
+.texto_form7{
+    font-size: 2rem;
+    position: absolute;
+    top: 500px;
+    left: 50px;
+    display: block;
+}
+
+.mensaje{
+    position: absolute;
+    top: 600px;
+}
+.textmensaje{
+    color: blue;
+}
+
+.mensaje{
+    position: relative;
+    top: 30px;
+    padding-bottom: 500px;
+    padding-left: 700px;
+    margin-left: 50px;
+}
+
+/*FIN CONTACTO*/
+
+/*FOOTER*/
+
+
+
+.footergrid{
+    grid-area: footer;
+    background-color: gray;
+    display: grid;
+    grid-template-columns: 50% 10% 10% 10% 10% 10%;
+    grid-template-rows:58px;
+    align-items: center;
+    justify-items: center;
+}
+.logo {
+    font-family: 'Roboto', sans-serif;
+    font-weight:lighter;
+    color: white;
+    margin-left: -300px;
+}
+.logo:hover {
+    font-family: 'Roboto', sans-serif;
+    font-weight:lighter;
+    color: black;
+}
+.blanco {
+    color:white;
+}
+.negro {
+    color: black;
+}
+.bordeadob {
+    color: black;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 20px;
+    display: block;
+    width: 97px;
+    height: 30px;
+    padding: 2px;
+    padding-left: 2px;
+    padding-left: 5px;
+}
+
+
+/*FIN FOOTER*/
+
