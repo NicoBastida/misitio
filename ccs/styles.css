@@ -10,9 +10,7 @@
 body{
     line-height: unset;
 }
-h1{
-   
-}
+
 a{
     text-decoration: none;
     color: black;
@@ -27,9 +25,7 @@ header{
     width: 100%;
     z-index: 999;
 }
-form{
 
-}
 /*FIN GENERICOS*/
 
 
